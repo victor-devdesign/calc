@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <div class="bg">
+        <header class="header">
+            <h1 class="header-title">CALCULADORA</h1>
+        </header>
+        <div class="vector v-01"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <input id="input-01" class="input-v1" type="text" placeholder="Selecione um operador" disabled></input>
+            </div>
+            <div class="col-md-6">
+                <select onChange="operation()" name="Operators" id="operators">
+                    <option value="">Selecione</option>
+                    <option value="add">Adição</option>
+                    <option value="sub">Subtração</option>
+                    <option value="mult">Multiplicação</option>
+                    <option value="divi">Divisão</option>
+                    <option value="dires">Divisão inteira</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <input id="input-02" class="input-v1" type="text" placeholder="Selecione um operador" disabled></input>
+            </div>
+        </div>
+        <div class="vector"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="preview" class="input-label">Preview:</label>
+                <input id="input-03" class="input-v1" id="preview" name="Preview" type="text"
+                    placeholder="A fórmula da operação será gerada aqui" disabled></input>
+            </div>
+            <div class="col-md-6">
+                <button onclick="calc()" class="calc-button">Calcular</button>
+            </div>
+        </div>
+        <div class="vector"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <label for="result" class="input-label">Resultado:</label>
+                <input id="input-04" class="input-v1" id="result" name="Result" type="text"
+                    placeholder="O resultado da operação será gerada aqui" disabled></input>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
